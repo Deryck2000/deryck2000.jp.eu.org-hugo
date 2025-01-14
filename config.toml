@@ -13,6 +13,7 @@ publishDir = "docs"
   rss = true
   lastmod = true
   location = "Japan"
+  headerIcon = "/images/GitHub-Mark-Light-32px.png"
 
   [[params.links]]
     title = "Link"
