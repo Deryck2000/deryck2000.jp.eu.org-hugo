@@ -17,6 +17,7 @@ publishDir = "docs"
     favicon = "/favicon.ico"
   avatar = "/dedeo_icon.gif"
   headerIcon = "/favicon.ico"
+  customCSS = "/css/custom.css"
 
   [[params.links]]
     title = "Link"
