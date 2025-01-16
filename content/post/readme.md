@@ -9,7 +9,3 @@ pin = true
 ![banner](/banner.png)  
 LINK FREE! ```https://deryck2000.jp.eu.org/banner.png```
 <!--more-->
-
-```
-asfoe
-```
