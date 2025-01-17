@@ -5,7 +5,7 @@ title = 'readme.md'
 +++
 
 # deryck2000.jp.eu.org
-![a](https://img.shields.io/badge/-GitHub-181717.svg?logo=github&style=plastic)![GitHub last commit](https://img.shields.io/github/last-commit/deryck2000/deryck2000.jp.eu.org?style=plastic)  
+![a](https://img.shields.io/badge/-GitHub-181717.svg?logo=github&style=plastic)  ![GitHub last commit](https://img.shields.io/github/last-commit/deryck2000/deryck2000.jp.eu.org?style=plastic)  <a href="https://wox.cc"><img src="https://deryck2000.counter.wox.cc/?mode=noscript" alt="wox-counter" title="wox-counter" /></a>  
 ![banner](/banner.png)  
 LINK FREE! 200 x 40 px ```https://deryck2000.jp.eu.org/banner.png```  
 <details class="dt_md">
