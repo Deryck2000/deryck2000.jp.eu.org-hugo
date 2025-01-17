@@ -17,7 +17,7 @@ publishDir = "docs"
     favicon = "/favicon.ico"
   avatar = "/dedeo_icon.gif"
   headerIcon = "/favicon.ico"
-  customCSS = ["/css/custom.css"]
+  customCSS = ["/css/custom.css", "/css/gh-dark-style.css"]
 
 
   [[params.links]]

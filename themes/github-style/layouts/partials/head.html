@@ -10,6 +10,10 @@
     <link rel="stylesheet" href='{{ "css/syntax.css" | absURL }}' />
     <link rel="stylesheet" href='{{ "css/custom.css" | absURL }}' />
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/gh-dark-style.css">
+    <script src="/js/clipboard.js" defer></script>
+<script src="/js/clipboard-init.js" defer></script>
+<script>hljs.initHighlightingOnLoad();</script>
     <title>{{ if .IsHome }}{{ else }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
     {{ if .Site.Params.favicon }}
     <link rel="icon" type="image/x-icon" href='{{ .Site.Params.favicon  }}'>
