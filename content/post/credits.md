@@ -17,3 +17,9 @@ title = 'Credits'
 - Tips: Hugoで静的サイト構築 #Go - Qiita  
   https://qiita.com/e99h2121/items/f8807b349f787c26d253
   {{< linkcard "https://qiita.com/e99h2121/items/f8807b349f787c26d253" >}}
+- Hugo で外部サイトを新しいタブで開きたい。 - k-kaz が Hugo で遊ぶサイト  
+  https://k-kaz-git.github.io/post/hugo-alink/
+  {{< linkcard "https://k-kaz-git.github.io/post/hugo-alink/" >}}
+- HugoでMarkdown内に記述したHTMLが表示されない - Scribble  
+  https://scribble.washo3.com/hugo0.6-goldmark
+  {{< linkcard "https://scribble.washo3.com/hugo0.6-goldmark" >}}

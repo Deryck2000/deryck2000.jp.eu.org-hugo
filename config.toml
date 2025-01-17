@@ -19,9 +19,13 @@ publishDir = "docs"
   headerIcon = "/favicon.ico"
   customCSS = "/css/custom.css"
 
+
   [[params.links]]
     title = "Link"
     href = "https://deryck2000.jp.eu.org/"
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
+
+  [markup.goldmark.renderer]
+  unsafe = true
