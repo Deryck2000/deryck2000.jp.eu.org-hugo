@@ -23,3 +23,6 @@ title = 'Credits'
 - HugoでMarkdown内に記述したHTMLが表示されない - Scribble  
   https://scribble.washo3.com/hugo0.6-goldmark
   {{< linkcard "https://scribble.washo3.com/hugo0.6-goldmark" >}}
+- Hugoで目次をページの中の好きなところに配置する - 12px.com  
+  https://12px.com/blog/2022/11/toc/
+  {{< linkcard "https://12px.com/blog/2022/11/toc/" >}}
