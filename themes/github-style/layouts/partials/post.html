@@ -103,31 +103,4 @@
   </main>
 </div>
 <script type="application/javascript" src='{{ "js/toc.js" | absURL }}'></script>
-<script>
-document.getElementById("copyButton").addEventListener("click", function() {
-    // ボタンのdata-copy-text属性からコピーするテキストを取得
-    var button = document.getElementById("copyButton");
-    // 改行文字は二重エスケープしています
-    var textToCopy = button.getAttribute("data-copy-text").replace(/\\n/g, "\n");
-    var textArea = document.createElement("textarea");
-    textArea.value = textToCopy;
-    document.body.appendChild(textArea);
-    textArea.select();
-    try {
-        document.execCommand("copy");
-        var originalButtonText = button.textContent;
-        button.textContent = "コピーしました!";
-        
-        // 2秒後にボタンのテキストを元に戻す
-        setTimeout(function() {
-            button.textContent = originalButtonText;
-        }, 2000);
-    } catch (err) {
-        console.error("コピーに失敗しました", err);
-    }
-    document.body.removeChild(textArea);
-});
-
-
-</script>
 <link rel="stylesheet" href='{{ "css/toc.css" | absURL }}' />
