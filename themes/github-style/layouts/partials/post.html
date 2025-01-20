@@ -88,14 +88,12 @@
                   {{- .Content -}}
                 </article>
                 <hr>
-    <button title="記事のタイトルとURLをコピー" class="share-url" data-clipboard-text="{{ .Title }} {{ .Permalink }}">
-      記事のタイトルとURLをコピー <i class="fas fa-link"></i>
-    </button>
+<button id="copyButton" data-copy-text="{{ .Title }} - デデオチャンのサイト\n{{ .Permalink }}">テキストをコピー</button>
     <button class="share-url"><a href="https://misskey-hub.net/share/?text={{ .Title }}&url={{ .Permalink }}&visibility=public&localOnly=0&manualInstance=misskey.art" target="_blank" rel="noopener noreferrer">Misskeyで共有</a></button>
     <button class="share-url"><a href="https://donshare.net/share.html?text=" onclick="window.open(this.href+encodeURI(decodeURI(document.title))+'&url='+encodeURI(decodeURI(location.href)), '', 'width=500,height=400'); return false;">donshare</a></button>
     <button class="share-url"><a href="http://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener noreferrer">Twitter</a></button>
     <button class="share-url"><a href="http://b.hatena.ne.jp/add?mode=confirm&url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener noreferrer">はてブ</a></button>
-    <button class="share-url"><a href="http://b.hatena.ne.jp/add?mode=confirm&url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener noreferrer">Pocket</a></button>
+    <button class="share-url"><a href="http://getpocket.com/edit?url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener noreferrer">Pocket</a></button>
               </div>
             </div>
           </div>
@@ -105,4 +103,31 @@
   </main>
 </div>
 <script type="application/javascript" src='{{ "js/toc.js" | absURL }}'></script>
+<script>
+document.getElementById("copyButton").addEventListener("click", function() {
+    // ボタンのdata-copy-text属性からコピーするテキストを取得
+    var button = document.getElementById("copyButton");
+    // 改行文字は二重エスケープしています
+    var textToCopy = button.getAttribute("data-copy-text").replace(/\\n/g, "\n");
+    var textArea = document.createElement("textarea");
+    textArea.value = textToCopy;
+    document.body.appendChild(textArea);
+    textArea.select();
+    try {
+        document.execCommand("copy");
+        var originalButtonText = button.textContent;
+        button.textContent = "コピーしました!";
+        
+        // 2秒後にボタンのテキストを元に戻す
+        setTimeout(function() {
+            button.textContent = originalButtonText;
+        }, 2000);
+    } catch (err) {
+        console.error("コピーに失敗しました", err);
+    }
+    document.body.removeChild(textArea);
+});
+
+
+</script>
 <link rel="stylesheet" href='{{ "css/toc.css" | absURL }}' />
