@@ -26,3 +26,6 @@ title = 'Credits'
 - Hugoで目次をページの中の好きなところに配置する - 12px.com  
   https://12px.com/blog/2022/11/toc/
   {{< linkcard "https://12px.com/blog/2022/11/toc/" >}}
+- Hugoで作ったサイトにシェアボタンを足した - AAbrain  
+  https://aakira.app/blog/2018/08/share/
+  {{< linkcard "https://aakira.app/blog/2018/08/share/" >}}
