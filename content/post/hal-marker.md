@@ -4,7 +4,7 @@ draft = false
 title = 'HAL-MARKER-FA【FireAlpaca/Medibang Paint向けブラシ配布】'
 +++
 
-CLIP STUDIO PAINT向けに配布していた「HAL-MARKER」系ブラシのFireAlpaca/Medibang Paint向けバージョンです。
+CLIP STUDIO PAINT向けに配布している「HAL-MARKER」系ブラシのFireAlpaca/Medibang Paint向けバージョンです。
 <!--more-->
 <img src="\assets\img\hal-marker-img.png" height="300">
 
