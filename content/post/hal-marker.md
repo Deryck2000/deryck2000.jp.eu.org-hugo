@@ -2,6 +2,7 @@
 date = '2025-01-29T06:28:53+09:00'
 draft = false
 title = 'HAL-MARKER-FA【FireAlpaca/Medibang Paint向けブラシ配布】'
+categories = [ "配布" ]
 +++
 
 CLIP STUDIO PAINT向けに配布している「HAL-MARKER」系ブラシのFireAlpaca/Medibang Paint向けバージョンです。
@@ -23,4 +24,3 @@ CLIP STUDIO PAINT向けに配布している「HAL-MARKER」系ブラシのFireA
 
 CLIP STUDIO PAINT向けはこちら：  
 https://assets.clip-studio.com/ja-jp/detail?id=1890867
-{{< linkcard "https://assets.clip-studio.com/ja-jp/detail?id=1890867" >}}

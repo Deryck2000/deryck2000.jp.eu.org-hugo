@@ -1,2 +1,2 @@
 @echo off
-hugo server -t github-style -D -w
+hugo server -t nostyleplease -D -w
