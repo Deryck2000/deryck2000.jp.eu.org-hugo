@@ -25,15 +25,15 @@
     {{- if .limit }}
         {{ $posts = (first .limit $posts ) }}
     {{ end }}
-    <ul>
+    <div>
         {{- range $post := $posts -}}
-        <li>
-            <span>{{- ($post.Date | time.Format site.Params.theme_config.date_format) }}</span>
+        <div>
+            <span>{{- ($post.Date | time.Format site.Params.theme_config.date_format) }}</span> | 
             <a href="{{ $post.Permalink | relURL }}">{{ $post.Title }}</a>
-        </li>
+        </div>
         {{ end }}
         {{- if and .show_more $limit_exceeded }}
-            <li><a href="{{ .show_more_url | relURL }}">{{ .show_more_text | default "Show more..." }}</a></li>
+            <div><a href="{{ .show_more_url | relURL }}">{{ .show_more_text | default "Show more..." }}</a></div>
         {{ end }}
-    </ul>
+    </div>
 {{ end }}
